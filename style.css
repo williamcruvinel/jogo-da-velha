@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: rgb(62, 167, 132);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    text-align: center;
+    background: rgb(36, 36, 36);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 3px 3px 0px 1px rgba(0, 0, 0, 0.2);
+}
+
+h1{
+    background-color: rgb(151, 40, 161);
+    color: #fff;
+    padding: 10px;
+    font-size: 24px;
+}
+
+label{
+    color: #f0f0f0;
+}
+
+input{
+    padding: 5px;
+    border: none;
+}
+
+.players{
+    text-align: left;
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: repeat(2);
+    grid-template-rows: repeat(2);
+    gap: 5px;
+    margin: 15px;
+}
+
+button{
+    background-color: rgb(151, 40, 161);
+    border-color:  rgb(151, 40, 161);
+    color: #f0f0f0;
+    margin: 10px 80px 5px 80px;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+h2{
+    color: #f0f0f0;
+    padding: 3px;
+}
+
+#game-board{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 10px 0;
+}
+
+#game-board span{
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 3px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.cursor-arrow{
+    cursor: default;
+}
+
+#game-board span.win{
+    background-color: rgb(11, 175, 11);
+}
+
+h3{
+    background-color: rgb(11, 175, 11);
+    color: #f0f0f0;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 50px;
+    font-size: 24px;
+}
